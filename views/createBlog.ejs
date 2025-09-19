@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Post</title>
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <%- include("partials/navbar") %>
+
+  <h1>Create a New Blog Post</h1>
+  <form action="/create" method="POST" enctype="multipart/form-data">
+    <p>
+      <label>Title:</label><br>
+      <input type="text" name="title" required>
+    </p>
+    <p>
+      <label>Content:</label><br>
+      <textarea name="content"  required></textarea>
+    </p>
+    <p>
+      <label>Upload Image:</label><br>
+      <input type="file" name="image">
+    </p>
+    <button type="submit">Publish</button>
+  </form>
+
+
+</body>
+</html>
