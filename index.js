@@ -47,7 +47,7 @@ app.get("/delete/:id", async (req, resp) => {
     const id = req.params.id;
     const post = await blogModel.findByIdAndDelete(id)
 
-    console.log(post);
+
     resp.redirect("/")
 
 })

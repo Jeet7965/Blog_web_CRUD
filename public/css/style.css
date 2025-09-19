@@ -86,16 +86,18 @@ padding: 15px;
   font-size: 0.9em;
 }
 
-.btn button:first-child {
-  background: #007bff;
+
+
+
+.del{
+ background: #dc3545;
   color: white;
 }
 
-.btn button:last-child {
-  background: #dc3545;
+.up{
+  background-color: #007bff;
   color: white;
 }
-
 /* Date & time group */
 .btn .datetime {
   display: flex;
